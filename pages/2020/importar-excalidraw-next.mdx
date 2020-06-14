@@ -1,0 +1,39 @@
+# Excalidraw é uma ferramenta muito legal.
+
+- Salvar json, git friendly.
+
+# Next é uma ferramenta muito legal.
+
+- SSG, joga fora os problemas.
+
+# Imagens são pesadas.
+
+# Excalidraw usa React.
+
+huh...
+
+# Importando excalidraw em Next
+
+```sh
+> yarn add next-excalidraw
+```
+
+`next.config.js`
+
+```js
+const withExcalidraw = require('next-excalidraw')()
+module.exports = withExcalidraw()
+```
+
+Finally, rename any excalidraw files to end in `.xcd.json`.
+
+Now you can import these files directly in React. Also works with MDX! 
+
+```mdx
+import Drawing from './drawing.xdc.json'
+
+# Here is a Excalidraw block
+It is using imported excalidraw diagrams!
+
+<Drawing />
+```
