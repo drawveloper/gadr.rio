@@ -1,0 +1,82 @@
+{
+  "name": "guilhermerodrigues.rio",
+  "private": true,
+  "engines": {"node": "12.x"},
+  "description": "Blog pessoal do Guilherme Rodrigues",
+  "version": "0.0.0",
+  "author": "Guilherme Rodrigues <gadr90@gmail.com>",
+  "bugs": {
+    "url": "https://github.com/firstdoit/guilhermerodrigues.rio/issues"
+  },
+  "dependencies": {
+    "gatsby": "^2.24.11",
+    "gatsby-plugin-catch-links": "^2.3.11",
+    "gatsby-plugin-feed": "^2.5.11",
+    "gatsby-plugin-google-analytics": "^2.3.13",
+    "gatsby-plugin-i18n": "^1.0.1",
+    "gatsby-plugin-manifest": "^2.4.21",
+    "gatsby-plugin-offline": "^3.2.21",
+    "gatsby-plugin-react-helmet": "^3.3.10",
+    "gatsby-plugin-sharp": "^2.6.22",
+    "gatsby-plugin-typography": "^2.5.10",
+    "gatsby-remark-autolink-headers": "2.3.11",
+    "gatsby-remark-copy-linked-files": "^2.3.11",
+    "gatsby-remark-external-links": "^0.0.4",
+    "gatsby-remark-images": "^3.3.21",
+    "gatsby-remark-prismjs": "^3.5.10",
+    "gatsby-remark-responsive-iframe": "^2.4.11",
+    "gatsby-remark-smartypants": "^2.3.10",
+    "gatsby-source-filesystem": "^2.3.23",
+    "gatsby-transformer-remark": "^2.8.27",
+    "gatsby-transformer-sharp": "^2.5.11",
+    "husky": "^4.2.5",
+    "lint-staged": "^10.2.11",
+    "lodash": "^4.17.19",
+    "prismjs": "^1.20.0",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-helmet": "^6.1.0",
+    "react-typography": "^0.16.19",
+    "typography": "^0.16.19",
+    "typography-theme-wordpress-2016": "^0.16.19"
+  },
+  "devDependencies": {
+    "eslint": "^7.5.0",
+    "eslint-plugin-react": "^7.20.3",
+    "gh-pages": "^3.1.0",
+    "glob": "^7.1.6",
+    "prettier": "^2.0.5"
+  },
+  "homepage": "https://guilhermerodrigues.rio",
+  "license": "MIT",
+  "scripts": {
+    "dev": "gatsby develop",
+    "lint": "./node_modules/.bin/eslint --ext .js,.jsx --ignore-pattern public .",
+    "format": "prettier --write '{gatsby-*.js,src/**/*.{js,jsx,json,css}}'",
+    "develop": "gatsby develop",
+    "start": "npm run develop",
+    "build": "rm -rf public && rm -rf .cache && gatsby build",
+    "now-build": "gatsby build",
+    "deploy": "yarn build && cp now.json public/ && cd public && now alias $(now) guilhermerodrigues.rio",
+    "dry": "yarn build && cp now.json public/ && cd public && now",
+    "js-to-jsx": "node src/utils/js-to-jsx"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "{gatsby-*.js,src/**/*.{js,jsx,json,css}}": [
+      "yarn format",
+      "git add"
+    ],
+    "src/pages/**/*.md": [
+      "yarn run js-to-jsx",
+      "git add"
+    ]
+  },
+  "resolutions": {
+    "**/sharp": "^0.23"
+  }
+}
