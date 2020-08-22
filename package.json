@@ -15,7 +15,6 @@
     "gatsby-plugin-catch-links": "^2.3.11",
     "gatsby-plugin-feed": "^2.5.11",
     "gatsby-plugin-google-analytics": "^2.3.13",
-    "gatsby-plugin-i18n": "^1.0.1",
     "gatsby-plugin-manifest": "^2.4.21",
     "gatsby-plugin-offline": "^3.2.21",
     "gatsby-plugin-react-helmet": "^3.3.10",
@@ -39,8 +38,7 @@
     "react-dom": "^16.13.1",
     "react-helmet": "^6.1.0",
     "react-typography": "^0.16.19",
-    "typography": "^0.16.19",
-    "typography-theme-wordpress-2016": "^0.16.19"
+    "typography": "^0.16.19"
   },
   "devDependencies": {
     "eslint": "^7.5.0",
@@ -60,8 +58,7 @@
     "build": "rm -rf public && rm -rf .cache && gatsby build",
     "now-build": "gatsby build",
     "deploy": "yarn build && cp now.json public/ && cd public && now alias $(now) guilhermerodrigues.rio",
-    "dry": "yarn build && cp now.json public/ && cd public && now",
-    "js-to-jsx": "node src/utils/js-to-jsx"
+    "dry": "yarn build && cp now.json public/ && cd public && now"
   },
   "husky": {
     "hooks": {
@@ -71,10 +68,6 @@
   "lint-staged": {
     "{gatsby-*.js,src/**/*.{js,jsx,json,css}}": [
       "yarn format",
-      "git add"
-    ],
-    "src/pages/**/*.md": [
-      "yarn run js-to-jsx",
       "git add"
     ]
   },

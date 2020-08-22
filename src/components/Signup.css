@@ -37,7 +37,7 @@
 .formkit-form .formkit-button,
 .formkit-form .formkit-submit {
   border: 0;
-  border-radius: 5px;
+  border-radius: 4px;
   color: #ffffff;
   cursor: pointer;
   display: inline-block;
@@ -211,7 +211,7 @@
 .formkit-form .formkit-alert {
   background: #f9fafb;
   border: 1px solid #e3e3e3;
-  border-radius: 5px;
+  border-radius: 24px;
   -webkit-flex: 1 0 auto;
   -ms-flex: 1 0 auto;
   flex: 1 0 auto;

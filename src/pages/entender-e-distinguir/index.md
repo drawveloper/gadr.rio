@@ -1,6 +1,6 @@
 ---
-title: The concise guide 
-date: '2020-07-15'
+title: Entender e distinguir
+date: '2020-08-22'
 spoiler: It's all about communication
 ---
 
