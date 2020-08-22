@@ -1,5 +1,5 @@
 ---
-title: The concise guide to sss
+title: The concise guide to rewriting the future
 date: '2020-07-15'
 spoiler: It's all about communication
 ---

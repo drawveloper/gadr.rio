@@ -1,7 +1,9 @@
 {
   "name": "guilhermerodrigues.rio",
   "private": true,
-  "engines": {"node": "12.x"},
+  "engines": {
+    "node": "12.x"
+  },
   "description": "Blog pessoal do Guilherme Rodrigues",
   "version": "0.0.0",
   "author": "Guilherme Rodrigues <gadr90@gmail.com>",
