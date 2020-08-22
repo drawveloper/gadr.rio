@@ -8,5 +8,4 @@ Este blog não é dedicado à passagem de conhecimento, mas sim à geração de 
 
 ![Distinguir acontece na ausência - o que foi comunicado mas não dito.](distinguir.png)
 
-
 (Em breve!)
