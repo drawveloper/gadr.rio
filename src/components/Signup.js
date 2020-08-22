@@ -9,7 +9,8 @@ class Signup extends React.Component {
     const form = {
       id: CONVERTKIT_FORM_ID,
       title: 'Receba um artigo por mês',
-      subTitle: 'Não mais, não menos.',
+      subTitle:
+        'Eu sei que sua inbox é preciosa - e lotada. Por isso, só vou te mandar um artigo por mês.',
       buttonText: 'Eu quero',
     };
     return (

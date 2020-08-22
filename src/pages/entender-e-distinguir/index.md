@@ -1,10 +1,12 @@
 ---
 title: Entender e distinguir
 date: '2020-08-22'
-spoiler: It's all about communication
+spoiler: Distinguir é descobrir por si mesmo - e passar a ser usado pela distinção, ao invés de usá-la.
 ---
 
-There is nothing more important than the occurring world. 
+Este blog não é dedicado à passagem de conhecimento, mas sim à geração de perguntas as quais nos ajudam a melhor nos reconhecermos e acessarmos por que fazemos o que fazemos.
 
-test
+![Distinguir acontece na ausência - o que foi comunicado mas não dito.](distinguir.png)
 
+
+(Em breve!)

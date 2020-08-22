@@ -37,8 +37,6 @@ class Layout extends React.Component {
           <Link
             style={{
               boxShadow: 'none',
-              textDecoration: 'none',
-              color: 'var(--textTitle)',
             }}
             to={'/'}
           >
@@ -93,7 +91,7 @@ class Layout extends React.Component {
           style={{
             marginLeft: 'auto',
             marginRight: 'auto',
-            maxWidth: rhythm(24),
+            maxWidth: rhythm(22),
             padding: `2.625rem ${rhythm(3 / 4)}`,
           }}
         >

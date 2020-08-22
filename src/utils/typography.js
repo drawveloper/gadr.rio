@@ -4,9 +4,9 @@ import Typography from 'typography';
 
 const t = {
   title: 'Guilherme Rodrigues',
-  baseFontSize: '18px',
-  baseLineHeight: 1.75,
-  scaleRatio: 2.5,
+  baseFontSize: '16px',
+  baseLineHeight: 1.7,
+  scaleRatio: 3,
   googleFonts: [
     {
       name: 'PT Serif',
@@ -27,6 +27,9 @@ const t = {
     a: {
       color: 'var(--textLink)',
       textDecoration: 'none',
+    },
+    'a:hover': {
+      color: 'var(--textLinkHover)',
     },
     hr: {
       background: 'var(--hr)',
