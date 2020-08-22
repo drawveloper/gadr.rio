@@ -7,7 +7,7 @@ import { rhythm, scale } from '../utils/typography';
 import sun from '../assets/sun.png';
 import moon from '../assets/moon.png';
 
-import { siteMetadata } from '../../gatsby-config'
+import { siteMetadata } from '../../gatsby-config';
 
 class Layout extends React.Component {
   state = {
@@ -23,7 +23,7 @@ class Layout extends React.Component {
     const { location, title } = this.props;
     const rootPath = `${__PATH_PREFIX__}/`;
 
-    console.log(this.state)
+    console.log(this.state);
 
     if (location.pathname === rootPath) {
       return (
@@ -131,7 +131,7 @@ class Layout extends React.Component {
                   ),
                 }}
                 checked={this.state.theme === 'dark'}
-                onChange={e =>
+                onChange={(e) =>
                   window.__setPreferredTheme(
                     e.target.checked ? 'dark' : 'light'
                   )

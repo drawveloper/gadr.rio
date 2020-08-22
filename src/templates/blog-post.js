@@ -27,7 +27,7 @@ class Translations extends React.Component {
   render() {
     let { translations, lang, languageLink, editUrl } = this.props;
 
-    let readerTranslations = translations.filter(lang => lang !== 'ru');
+    let readerTranslations = translations.filter((lang) => lang !== 'ru');
 
     return (
       <div className="translations">
@@ -90,7 +90,7 @@ class BlogPostTemplate extends React.Component {
     // see utils/whitelist.js
     html = replaceAnchorLinksByLanguage(html, lang);
 
-    translatedLinks.forEach(link => {
+    translatedLinks.forEach((link) => {
       // jeez
       function escapeRegExp(str) {
         return str.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');

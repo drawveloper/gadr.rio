@@ -2,7 +2,8 @@ module.exports = {
   siteMetadata: {
     title: 'Linguagem cria realidade',
     author: 'Guilherme Rodrigues',
-    description: 'Blog do Guilherme Rodrigues sobre comunicação, cultura e código.',
+    description:
+      'Blog do Guilherme Rodrigues sobre comunicação, cultura e código.',
     siteUrl: 'https://guilhermerodrigues.rio',
     social: {
       twitter: '@guirodriguesrio',
@@ -78,11 +79,12 @@ module.exports = {
         feeds: [
           {
             serialize: ({ query: { site, allMarkdownRemark } }) => {
-              return allMarkdownRemark.edges.map(edge => {
+              return allMarkdownRemark.edges.map((edge) => {
                 const siteUrl = site.siteMetadata.siteUrl;
                 const postText = `
-                <div style="margin-top=55px; font-style: italic;">(This is an article posted to my blog at guilhermerodrigues.rio. You can read it online by <a href="${siteUrl +
-                  edge.node.fields.slug}">clicking here</a>.)</div>
+                <div style="margin-top=55px; font-style: italic;">(This is an article posted to my blog at guilhermerodrigues.rio. You can read it online by <a href="${
+                  siteUrl + edge.node.fields.slug
+                }">clicking here</a>.)</div>
               `;
 
                 let html = edge.node.html;
@@ -127,7 +129,7 @@ module.exports = {
               }
             `,
             output: '/rss.xml',
-            title: "Blog do Guilherme Rodrigues - Feed RSS",
+            title: 'Blog do Guilherme Rodrigues - Feed RSS',
           },
         ],
       },
