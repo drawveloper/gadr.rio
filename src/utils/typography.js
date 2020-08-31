@@ -4,9 +4,9 @@ import Typography from 'typography';
 
 const t = {
   title: 'Guilherme Rodrigues',
-  baseFontSize: '16px',
-  baseLineHeight: 1.7,
-  scaleRatio: 3,
+  baseFontSize: '18px',
+  baseLineHeight: 1.6,
+  scaleRatio: 2.8,
   googleFonts: [
     {
       name: 'PT Serif',

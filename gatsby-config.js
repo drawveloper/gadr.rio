@@ -50,6 +50,7 @@ module.exports = {
         ],
       },
     },
+    'gatsby-plugin-draft',
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
@@ -79,9 +80,9 @@ module.exports = {
               return allMarkdownRemark.edges.map((edge) => {
                 const siteUrl = site.siteMetadata.siteUrl;
                 const postText = `
-                <div style="margin-top=55px; font-style: italic;">(This is an article posted to my blog at guilhermerodrigues.rio. You can read it online by <a href="${
+                <div style="margin-top=55px; font-style: italic;">(Esse é um artigo no meu blog em guilhermerodrigues.rio. Você pode o ler <a href="${
                   siteUrl + edge.node.fields.slug
-                }">clicking here</a>.)</div>
+                }">clicando aqui</a>.)</div>
               `;
 
                 let html = edge.node.html;
@@ -105,6 +106,7 @@ module.exports = {
               {
                 allMarkdownRemark(
                   limit: 1000,
+                  filter: { fields: { draft: { eq: false } } }
                   sort: { order: DESC, fields: [frontmatter___date] }
                 ) {
                   edges {
