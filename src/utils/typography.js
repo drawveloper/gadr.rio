@@ -6,7 +6,7 @@ const t = {
   title: 'Guilherme Rodrigues',
   baseFontSize: '18px',
   baseLineHeight: 1.6,
-  scaleRatio: 2.8,
+  scaleRatio: 2.9,
   googleFonts: [
     {
       name: 'PT Serif',

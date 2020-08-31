@@ -38,19 +38,21 @@ Sob o desgoverno que estamos, não preciso sequer gastar tempo "articulando" o *
 
 ## O que vale à pena?
 
-> PARTICPANT: I’m starting to ask myself, “what is worthwhile?” 
+> PARTICIPANT: I’m starting to ask myself, “what is worthwhile?” 
 > 
 > ERHARD: That’s a great question: A question to live with. If you live with that question for the rest of your life, your life will have a quality that it won’t have without it. You ask the question for the light the question gives. 
 > 
 > ― Hyde, Bruce. Speaking Being (p. 72). Wiley. Kindle Edition. 
 
-O que é, para você, um futuro que vale à pena? Essa é uma pergunta cuja simples presença torna mais poderosa a pessoa que a faz. Essa pergunta a permite refletir: o que eu estou fazendo e falando, as minhas ações e a minha linguagem, estão consistentes com qual futuro? Se eu mudar minhas ações, o que pode acontecer?
+O que é, para você, um futuro que vale a pena? Essa é uma pergunta cuja simples presença torna mais poderosa a pessoa que a faz. Essa pergunta a permite refletir: o que eu estou fazendo e falando, as minhas ações e a minha linguagem, estão consistentes com qual futuro? Se eu mudar minhas ações, o que pode acontecer?
 
 Olga Loffredi, CEO da Vanto Group, [menciona em uma entrevista](https://youtu.be/UujhbzoXkQI?t=473) a importância do futuro em nossas vidas recontando a passagem de um livro sobre os sobreviventes do Holocausto: "quem sobreviveu foi quem se manteve com um futuro (...) quem perdeu o futuro perdeu a vida também". 
 
 Todos nós vivemos em função de um futuro que nós mesmos criamos através da nossa linguagem: a única coisa sobre a qual temos total controle. 
 
 ## Convite para um futuro desejado
+
+![A diferença entre o futuro previsível e o futuro desejado exige performance e liderança.](futuro-desejado.png)
 
 Existe uma grande oportunidade de criarmos um novo futuro para nosso país e continente, mas ele não é óbvio. Para que aconteça, será exigido de nós um "aumento de performance". Vamos descobrir que somos capazes de fazer coisas que não eram previsíveis - o que *sempre* nos tira da zona de conforto. 
 
