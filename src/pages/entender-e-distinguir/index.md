@@ -1,6 +1,6 @@
 ---
 title: Entender e distinguir
-date: '2020-09-24'
+date: '2021-04-01'
 draft: true
 spoiler: Distinguir é descobrir por si mesmo - e passar a ser usado pela distinção, ao invés de usá-la.
 ---

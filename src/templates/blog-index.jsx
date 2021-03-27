@@ -14,7 +14,17 @@ class BlogIndexTemplate extends React.Component {
   render() {
     const siteTitle = get(this, 'props.data.site.siteMetadata.title');
     const posts = get(this, 'props.data.allMarkdownRemark.edges');
-
+    const draftStyles = {
+      border: 'rgb(8, 34, 22, 0.3) 2px dashed',
+      borderRadius: '5px',
+    };
+    const draftBadge = {
+      backgroundColor: '#444',
+      color: 'white',
+      marginLeft: '10px',
+      borderRadius: '5px',
+      padding: '2px 4px',
+    };
     return (
       <Layout location={this.props.location} title={siteTitle}>
         <SEO />
@@ -24,13 +34,19 @@ class BlogIndexTemplate extends React.Component {
         <main>
           {posts.map(({ node }) => {
             const title = get(node, 'frontmatter.title') || node.fields.slug;
+            const draft = get(node, 'frontmatter.draft') || false;
+            const articleStyles = {
+              padding: '15px',
+              marginBottom: rhythm(1),
+              ...(draft && draftStyles),
+            };
             return (
-              <article key={node.fields.slug}>
+              <article key={node.fields.slug} style={articleStyles}>
                 <header>
                   <h3
                     style={{
                       fontSize: rhythm(1),
-                      marginBottom: rhythm(1 / 4),
+                      marginBottom: rhythm(1 / 6),
                     }}
                   >
                     <Link
@@ -41,13 +57,22 @@ class BlogIndexTemplate extends React.Component {
                       {title}
                     </Link>
                   </h3>
-                  <small>
+                  <small
+                    style={{
+                      marginBottom: rhythm(1 / 2),
+                      display: 'inline-block',
+                    }}
+                  >
                     {formatPostDate(node.frontmatter.date, 'pt-br')}
                     {` • ${formatReadingTime(node.timeToRead)}`}
+                    {draft && <span style={draftBadge}>draft</span>}
                   </small>
                 </header>
                 <p
                   dangerouslySetInnerHTML={{ __html: node.frontmatter.spoiler }}
+                  style={{
+                    marginBottom: rhythm(0),
+                  }}
                 />
               </article>
             );
@@ -69,10 +94,7 @@ export const pageQuery = graphql`
         description
       }
     }
-    allMarkdownRemark(
-      filter: { fields: { draft: { eq: false } } }
-      sort: { fields: [frontmatter___date], order: DESC }
-    ) {
+    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
       edges {
         node {
           timeToRead
@@ -82,6 +104,7 @@ export const pageQuery = graphql`
           frontmatter {
             date(formatString: "MMMM DD, YYYY")
             title
+            draft
             spoiler
           }
         }
