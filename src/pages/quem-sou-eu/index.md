@@ -4,11 +4,19 @@ date: '2021-03-26'
 spoiler: Quem sou eu, por que estou aqui e outras perguntas.
 ---
 
-Bem vindo ao **Linguagem cria realidade**, um blog sobre *comunicação, cultura e código*.
+*TL;DR:*
+Eu tive acesso a um computador com 3 anos de idade e isso mudou minha vida.
+Comecei a programar adolescente, entrei na VTEX com 21 anos.
+Eu não sou um grande desenvolvedor, nem um grande comunicador...
+Mas eu tenho um compromisso extraordinário com o futuro do Rio de Janeiro.
 
 ## Quem sou eu?
 
-Prazer! Meu nome é Guilherme Rodrigues. Eu sou carioca, desenvolvedor de software e sócio da [VTEX](https://www.vtex.com), uma **empresa brasileira de tecnologia** na qual trabalho desde 2012. Neste momento eu sou, também, um autor! 😛
+Meu nome é Guilherme \[Antonio Diaz\] Rodrigues. Eu sou carioca, desenvolvedor de software e sócio da [VTEX](https://www.vtex.com), uma **empresa brasileira de tecnologia** na qual trabalho desde 2012. Neste momento eu sou, também, um autor. Eu 
+
+> Nosso, incluindo você, foi certamente um PC provavelmente 286 ou 386. Foi na Oswaldo Cruz que tivemos espaço para isso, no quarto de vocês.
+
+
 
 ## Por que estou aqui?
 

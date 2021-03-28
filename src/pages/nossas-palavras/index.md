@@ -1,6 +1,7 @@
 ---
 title: Nossas palavras, nossas ações, nossos resultados 
 date: '2021-03-27'
+draft: true
 spoiler: Nossas conversas criam o futuro para nós mesmos e aqueles ao nosso redor. Nós vivemos nas estórias que criamos em linguagem.
 ---
 
