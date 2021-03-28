@@ -1,7 +1,7 @@
 ---
 title: Introdução - quem sou eu. 
-date: '2021-03-27'
-spoiler: Quem sou eu, por que estou aqui e outras perguntas ― Bem vindo ao Linguagem cria realidade, meu blog sobre comunicação, cultura e código. Quem sou eu? Prazer! Meu nome é Guilherme Rodrigues. Eu sou carioca, desenvolvedor de software e...
+date: '2021-03-26'
+spoiler: Quem sou eu, por que estou aqui e outras perguntas.
 ---
 
 Bem vindo ao **Linguagem cria realidade**, um blog sobre *comunicação, cultura e código*.

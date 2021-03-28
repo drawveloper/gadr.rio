@@ -272,3 +272,7 @@ pre[data-line] {
   float: left;
   min-width: 100%;
 }
+
+.draft {
+  border-color: var(--textLinkHover);
+}

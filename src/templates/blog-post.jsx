@@ -4,6 +4,7 @@ import get from 'lodash/get';
 
 import Bio from '../components/Bio';
 import Layout from '../components/Layout';
+import DraftBadge from '../components/DraftBadge';
 import SEO from '../components/SEO';
 import Signup from '../components/Signup';
 import { formatPostDate, formatReadingTime } from '../utils/helpers';
@@ -19,7 +20,8 @@ class BlogPostTemplate extends React.Component {
   render() {
     const post = this.props.data.markdownRemark;
     const siteTitle = get(this.props, 'data.site.siteMetadata.title');
-    let { previous, next, slug } = this.props.pageContext;
+
+    let { previous, next, slug, draft } = this.props.pageContext;
     const lang = 'pt-br';
     const editUrl = `https://github.com/${GITHUB_USERNAME}/${GITHUB_REPO_NAME}/edit/master/src/pages/${slug}/index.md`;
     const discussUrl = `https://mobile.twitter.com/search?q=${encodeURIComponent(
@@ -49,6 +51,7 @@ class BlogPostTemplate extends React.Component {
               >
                 {formatPostDate(post.frontmatter.date, lang)}
                 {` • ${formatReadingTime(post.timeToRead)}`}
+                {draft && <DraftBadge />}
               </p>
             </header>
             <div dangerouslySetInnerHTML={{ __html: post.html }} />
